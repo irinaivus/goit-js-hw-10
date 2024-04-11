@@ -5,16 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
+
     
     <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-3c4e11fa.js">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-d3b5fc92.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-4639df27.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-8aa210f2.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+    <section class="section">
+      <a class="link-main" href="./index.html">Go to home</a>
     </section>
+
+    <form class="form">
+      <div class="delay-input-div">
+        <label class="delay-label">
+          Delay (ms)
+          <input class="delay-input" type="number" name="delay" required />
+        </label>
+      </div>
+
+      <div class="state-div">
+        <fieldset>
+          <legend>State</legend>
+
+          <div class="state-label-div">
+            <label class="form-label">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+          </div>
+          <div class="delay-label-div">
+            <label class="form-label">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="delay-btn" type="submit">Create notification</button>
+    </form>
+
     
   </body>
 </html>
