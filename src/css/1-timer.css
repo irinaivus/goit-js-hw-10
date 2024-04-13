@@ -21,7 +21,23 @@
   margin-bottom: 32px;
 }
 
-.timer-btn {
+#dateTime-picker:hover,
+#dateTime-picker:focus {
+  border: 1px solid #000;
+}
+
+#dateTime-picker:active {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+
+#dateTime-picker:disabled {
+  background-color: #cfcfcf;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+button {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -36,16 +52,16 @@
   letter-spacing: 0.04em;
   color: #fff;
 }
-
-.timer-btn:active {
-  background-color: #4e75ff;
+button:hover {
+  background-color: #6c8cff;
 }
-.timer-btn:disabled {
+button:disabled {
+  color: #989898;
   background-color: #cfcfcf;
 }
-/* .timer-btn:hover {
-  background-color: #6c8cff;
-} */
+
+.timer-btn {
+}
 
 .timer {
   width: 346px;
